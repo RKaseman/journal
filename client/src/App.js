@@ -1,3 +1,4 @@
+
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./pages/Login";
@@ -7,18 +8,18 @@ import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 
 const App = () => (
-  <Router>
-    <div>
-      <Nav />
-      <Switch>
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/" component={Books} />
-        <Route exact path="/books" component={Books} />
-        <Route exact path="/books/:id" component={Detail} />
-        <Route component={NoMatch} />
-      </Switch>
-    </div>
-  </Router>
+    <Router>
+        <div>
+            <Nav />
+            <Switch>
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/" component={Books} />
+                <Route exact path="/books" component={Books} />
+                <Route exact path="/books/:id" component={Detail} />
+                <Route component={NoMatch} />
+            </Switch>
+        </div>
+    </Router>
 );
 
 export default App;

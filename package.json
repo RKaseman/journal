@@ -20,6 +20,9 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "@okta/jwt-verifier": "0.0.12",
+    "@okta/oidc-middleware": "^1.0.0",
+    "@okta/okta-react": "^1.1.1",
     "axios": "^0.16.2",
     "connect-ensure-login": "^0.1.1",
     "express": "^4.16.4",
