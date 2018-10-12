@@ -2,19 +2,6 @@
 import axios from "axios";
 
 export default {
-
-    // +
-    // Create user
-    newUser: function () {
-        return axios.post("/api/users");
-    },
-    // Login
-    getUser: function () {
-        return axios.get("/api/users");
-    },
-    // ^
-
-
     // Gets all books
     getBooks: function () {
         return axios.get("/api/books");
