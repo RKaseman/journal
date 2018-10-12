@@ -29,7 +29,7 @@ const PORT = process.env.PORT || 3001;
 // });
 
 // passport.deserializeUser(function (id, cb) {
-//     db.users.findById(id, function (err, user) {
+//     db.users.findByUserId(id, function (err, user) {
 //         if (err) { return cb(err); }
 //         cb(null, user);
 //     });
