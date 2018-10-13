@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #e0fcd5;    
+    
+}
+
+.navbarName {
+    color: rgb(8, 22, 2);
+    font: normal;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+a:link {
+    text-decoration: none;
+    color:  #091803;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #091803;
+}

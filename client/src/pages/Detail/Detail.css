@@ -1,0 +1,52 @@
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(8, 22, 2);
+    background-color: #f2fded00;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(8, 22, 2);
+    background-color: #f2fded00;
+}
+
+#jTitleTop {
+    font-size: 28px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(8, 22, 2);
+    line-height: 28px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+#jTitleBottomDetail {
+    font-size: 42px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(8, 22, 2);
+    line-height: 46px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 10px 20px 10px;
+}
+
+#PostItBottom {
+    background-color: rgb(201, 235, 198);
+    color: rgb(8, 22, 2);
+    font-family: 'Permanent Marker', cursive;
+    width: 50%;
+    height: 225px;
+    margin: 0px 0px 20px 0px;
+    padding: 15px 10px 0px 10px;
+}
+
+#PostItTop {
+    background-color: rgb(183, 223, 179);
+    color: rgb(8, 22, 2);
+    font-family: 'Permanent Marker', cursive;
+    width: 50%;
+    height: 75px;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 10px 20px 10px;
+}
+

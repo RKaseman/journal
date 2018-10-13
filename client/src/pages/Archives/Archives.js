@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
+import { List, ListItem } from "../../components/List";
 import { Col, Row, Container } from "../../components/Grid";
-import { Input, TextArea, FormBtn } from "../../components/Form";
-import "./Books.css";
+import "./Archives.css";
 
 class Books extends Component {
   state = {
@@ -55,51 +56,37 @@ class Books extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
-          <div id="PostItTop">
+          <Col size="md-6 sm-12">
+            <div id="PostItTop">
               <p id="jTitleTop">
-              
+               
               </p>
             </div>
           </Col>
         </Row>
         <Row>
-        <Col size="md-6 md-offset-1">
+          <Col size="md-6 md-offset-1">
             <div id="PostItBottom">
-              <div id="jTitleBottomBooks">
-                Write
-              </div>
+              <p id="jTitleBottomArchives">
+                Archives
+              </p>
             </div>
-          
-            <Link to={"/archives/"} type="button" className="button">View Archives</Link>
-            
-          
-            <form>
-              <Input
-                value={this.state.title}
-                onChange={this.handleInputChange}
-                name="title"
-                placeholder="Date/Time (required)"
-              />
-              <Input
-                value={this.state.author}
-                onChange={this.handleInputChange}
-                name="author"
-                placeholder="Entry Title (required)"
-              />
-              <TextArea
-                value={this.state.synopsis}
-                onChange={this.handleInputChange}
-                name="synopsis"
-                placeholder="Write Journal Entry Here"
-              />
-              <FormBtn
-                disabled={!(this.state.author && this.state.title)}
-                onClick={this.handleFormSubmit}
-              >
-                Submit Book
-              </FormBtn>
-            </form>
+            {this.state.books.length ? (
+              <List>
+                {this.state.books.map(book => (
+                  <ListItem key={book._id}>
+                    <Link to={"/books/" + book._id}>
+                      <strong>
+                        {book.title} Entry: {book.author}
+                        </strong>
+                    </Link>
+                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
+                  </ListItem>
+                ))}
+              </List>
+            ) : (
+              <h3>No Results to Display</h3>
+            )}
           </Col>
         </Row>
       </Container>
