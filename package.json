@@ -22,9 +22,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "express": "^4.16.3",
-    "if-env": "^1.0.4",
     "mongoose": "^5.0.17",
-    "react-grid-layout": "^0.16.6",
-    "react-scale-text": "^1.2.2"
+    "if-env": "^1.0.4"
   }
 }
