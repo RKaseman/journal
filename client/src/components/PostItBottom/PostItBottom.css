@@ -1,0 +1,10 @@
+.postItBottom {
+    background-color: rgb(201, 235, 198);
+    color: rgb(8, 22, 2);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    width: 50%;
+    height: 225px;
+    margin: 0px 0px 20px 0px;
+    padding: 15px 10px 0px 10px;
+}

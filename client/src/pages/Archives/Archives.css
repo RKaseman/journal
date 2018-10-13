@@ -1,0 +1,41 @@
+#PostItBottom {
+    background-color: rgb(201, 235, 198);
+    color: rgb(8, 22, 2);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    width: 50%;
+    height: 225px;
+    margin: 0px 0px 20px 0px;
+    padding: 15px 10px 0px 10px;
+}
+
+#PostItTop {
+    background-color: rgb(183, 223, 179);
+    color: rgb(8, 22, 2);
+    font-family: 'Permanent Marker', cursive;
+    width: 50%;
+    height: 75px;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 10px 20px 10px;
+} 
+
+#jTitleTop {
+    font-size: 28px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(8, 22, 2);
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 0px 0px 0px;
+}
+
+#jTitleBottomArchives {
+    font-size: 70px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(8, 22, 2);
+    line-height: 75px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 0px 0px 0px;
+}
+

@@ -1,0 +1,10 @@
+.postItTop {
+    background-color: rgb(183, 223, 179);
+    color: rgb(8, 22, 2);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 28px;
+    width: 50%;
+    height: 75px;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 10px 20px 10px;
+}

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
-import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
+import "./Detail.css";
+
+
 
 class Detail extends Component {
   state = {
@@ -20,18 +22,27 @@ class Detail extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-12">
-            <Jumbotron>
-              <h1>
-                {this.state.book.title} by {this.state.book.author}
-              </h1>
-            </Jumbotron>
+          <Col size="md-6 md-offset-1">
+            <div id="PostItTop">
+              <p id="jTitleTop">
+              {this.state.book.title} 
+              </p>
+            </div>
           </Col>
         </Row>
         <Row>
-          <Col size="md-10 md-offset-1">
+        <Col size="md-6 md-offset-1">
+            <div id="PostItBottom">
+              <p id="jTitleBottomDetail">
+                Entry: {this.state.book.author}
+              </p>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col size="md-6 md-offset-1">
             <article>
-              <h1>Synopsis</h1>
+              <h2>Entry: </h2>
               <p>
                 {this.state.book.synopsis}
               </p>
@@ -40,7 +51,7 @@ class Detail extends Component {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Authors</Link>
+            <Link to="/">← Back </Link>
           </Col>
         </Row>
       </Container>
