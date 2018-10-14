@@ -1,13 +1,22 @@
+
+
 .navbar {
-    background-color: #e0fcd5;    
+    background-color: #e0fcd5;
+    padding: 0px;
+    min-height: 132px;
+    display: block;
     
 }
 
 .navbarName {
     color: rgb(8, 22, 2);
-    font: normal;
     font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
+    font-size: 64px;
+    line-height: 125px;
+    padding: 0px 20px 0px 20px;
+    min-height: 132px;
+    display: block;
+    position: absolute;
 }
 
 a:link {
@@ -18,4 +27,61 @@ a:link {
 a:visited {
     text-decoration: none;
     color: #091803;
+}
+
+.LinkButton:any-link {
+    font-size: 20px;
+    height: 38px;
+    width: 100%;
+    background-color: rgb(201, 235, 198);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2.5px;
+    text-align: center;
+    color: rgb(8, 22, 2);
+    border-style: solid;
+    border-color: rgb(183, 223, 179);
+    border-width: 2px;
+    border-radius: 5px;
+    display: block;
+    line-height: 28px;
+  }
+
+.LinkButton:hover {
+    background-color: rgb(183, 223, 179);
+    color: rgb(244, 255, 242);
+    border-color: rgb(8, 22, 2);
+  }
+
+  .Wrap1 {
+      display: block;
+      height: 40px;
+      width: 220px;
+      margin: 0px 20px 0px 20px;
+      position: absolute;
+      right: 20px;
+      top: 89px;
+      display: block;
+  }
+
+  .Wrap2 {
+    display: block;
+    height: 40px;
+    width: 220px;
+    margin: 0px 20px 0px 20px;
+    position: absolute;
+    right: 20px;
+    top: 47px;
+    display: block;
+}
+
+.Wrap3 {
+    display: block;
+    height: 40px;
+    width: 220px;
+    margin: 0px 20px 0px 20px;
+    position: absolute;
+    right: 20px;
+    top:5px;
+    display: block;
 }

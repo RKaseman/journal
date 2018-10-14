@@ -1,0 +1,21 @@
+button {
+    
+    height: 40px;
+    background-color: rgb(201, 235, 198);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2.5px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(10, 54, 21);
+    border-style: solid;
+    border-color: rgb(183, 223, 179);
+    border-width: 2px;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: rgb(183, 223, 179);
+    color: rgb(10, 54, 21);
+    border-color: rgb(201, 235, 198);
+  }
