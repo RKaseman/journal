@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
-import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import "./Books.css";
@@ -71,9 +70,6 @@ class Books extends Component {
               </div>
             </div>
           
-            <Link to={"/archives/"} type="button" className="button">View Archives</Link>
-            
-          
             <form>
               <Input
                 value={this.state.title}
@@ -97,7 +93,7 @@ class Books extends Component {
                 disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}
               >
-                Submit Book
+                Submit Entry
               </FormBtn>
             </form>
           </Col>

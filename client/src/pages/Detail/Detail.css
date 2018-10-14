@@ -36,7 +36,7 @@ p {
     font-family: 'Permanent Marker', cursive;
     width: 50%;
     height: 225px;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 25px 0px;
     padding: 15px 10px 0px 10px;
 }
 
@@ -49,4 +49,9 @@ p {
     margin: 20px 0px 0px 0px;
     padding: 20px 10px 20px 10px;
 }
+
+article {
+    margin-top:20px;
+}
+
 
