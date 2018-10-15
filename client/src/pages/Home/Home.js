@@ -37,6 +37,8 @@ export default withAuth(class Login extends Component {
     if (this.state.authenticated === null) return null;
     return this.state.authenticated ?
       <button onClick={this.logout}>Logout</button> :
+      <input type="text" name="username" placeholder="username" />,
+      <input type="password" name="password" placeholder="password" />,
       <button onClick={this.login}>Login</button>;
   }
 });
