@@ -14,13 +14,13 @@ const App = () => (
     <div>
       <Nav />
       <Switch>
-      <Security issuer={config.issuer}
-                  client_id={config.client_id}
-                  redirect_uri={config.redirect_uri}
-        >
-          <Route path='/' exact={true} component={Home}/>
-          <Route path='/implicit/callback' component={ImplicitCallback}/>
-        </Security>
+      {/* <Security issuer={config.issuer} */}
+                  {/* client_id={config.client_id} */}
+                  {/* redirect_uri={config.redirect_uri} */}
+        {/* > */}
+          {/* <Route path='/' exact={true} component={Home}/> */}
+          {/* <Route path='/implicit/callback' component={ImplicitCallback}/> */}
+        {/* </Security> */}
         <Route exact path="/" component={Books} />
         <Route exact path="/books" component={Books} />
         <Route exact path="/books/:id" component={Detail} />
