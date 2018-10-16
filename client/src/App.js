@@ -9,15 +9,6 @@ import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 
 
-// import { Security, ImplicitCallback } from '@okta/okta-react';
-
-const config = {
-  issuer: 'https://dev-264265.oktapreview.com/oauth2/default',
-  redirect_uri: window.location.origin + '/implicit/callback',
-  client_id: '0oagmqmy9ng7OX4J60h7'
-}
-
-
 const App = () => (
   <Router>
     <div>
@@ -36,7 +27,8 @@ const App = () => (
         <Route exact path="/archives" component={Archives} />
         <Route component={NoMatch} />
       </Switch>
-    </div>
+      
+      </div>
   </Router>
 );
 

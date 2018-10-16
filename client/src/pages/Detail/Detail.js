@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import API from "../../utils/API";
 import "./Detail.css";
+import Fractal from "../../components/Fractal";
 
 
 
@@ -22,6 +23,8 @@ class Detail extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6 md-offset-1">
+          <Row>
+            <Col size="md-12 md offset-1">
             <div id="PostItTop">
               <p id="jTitleTop">
               {this.state.book.title} 
@@ -30,7 +33,7 @@ class Detail extends Component {
           </Col>
         </Row>
         <Row>
-        <Col size="md-6 md-offset-1">
+        <Col size="md-12 md-offset-1">
             <div id="PostItBottom">
               <p id="jTitleBottomDetail">
                 Entry: {this.state.book.author}
@@ -39,7 +42,7 @@ class Detail extends Component {
           </Col>
         </Row>
         <Row>
-          <Col size="md-6 md-offset-1">
+          <Col size="md-12 md-offset-1">
             <article>
               <h2>Entry: </h2>
               <p>
@@ -48,9 +51,18 @@ class Detail extends Component {
             </article>
           </Col>
         </Row>
-        <Row>
-          <Col size="md-12">
-            
+      </Col>
+      <Col size="md-6 md-offset-1">
+      <Row>
+              <Col size="md-12 md-offset-1">
+                <Fractal />
+              </Col>
+            </Row>
+            <Row>
+              <Col size="md-12 md-offset-1">
+                <Fractal />
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

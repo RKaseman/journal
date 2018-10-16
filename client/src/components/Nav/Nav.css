@@ -2,21 +2,23 @@
 
 .navbar {
     background-color: #e0fcd5;
-    padding: 0px;
+    padding: 0px 0px 0px 0px;
     min-height: 132px;
     display: block;
+    position: relative;
+    width: 100%;
     
 }
 
 .navbarName {
     color: rgb(8, 22, 2);
     font-family: 'Permanent Marker', cursive;
-    font-size: 64px;
+    font-size: 120px;
     line-height: 125px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 10px;
     min-height: 132px;
     display: block;
-    position: absolute;
+    width: 650px;
 }
 
 a:link {
@@ -57,7 +59,7 @@ a:visited {
       display: block;
       height: 40px;
       width: 220px;
-      margin: 0px 20px 0px 20px;
+      margin: 0px 10px 0px 10px;
       position: absolute;
       right: 20px;
       top: 89px;
@@ -68,7 +70,7 @@ a:visited {
     display: block;
     height: 40px;
     width: 220px;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 10px 0px 10px;
     position: absolute;
     right: 20px;
     top: 47px;
@@ -79,9 +81,22 @@ a:visited {
     display: block;
     height: 40px;
     width: 220px;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 10px 0px 10px;
     position: absolute;
     right: 20px;
     top:5px;
     display: block;
+}
+
+@media screen and (max-width: 640px) {
+
+    .navbarName {
+        color: rgb(8, 22, 2);
+        font-family: 'Permanent Marker', cursive;
+        font-size: 72px;
+        line-height: 125px;
+        padding: 0px 20px 0px 20px;
+        min-height: 132px;
+        display: block;
+    }
 }
