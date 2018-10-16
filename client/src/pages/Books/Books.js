@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
@@ -55,21 +56,21 @@ class Books extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-          <div id="PostItTop">
+            <div id="PostItTop">
               <p id="jTitleTop">
-              
+
               </p>
             </div>
           </Col>
         </Row>
         <Row>
-        <Col size="md-6 md-offset-1">
+          <Col size="md-6 md-offset-1">
             <div id="PostItBottom">
               <div id="jTitleBottomBooks">
                 Write
               </div>
             </div>
-          
+
             <form>
               <Input
                 value={this.state.title}

@@ -1,9 +1,9 @@
 
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-var UserSchema = new Schema({
+const userSchema = new Schema({
     username: {
         type: String,
         trim: true,
@@ -28,12 +28,11 @@ var UserSchema = new Schema({
 });
 
 // Custom Instance Methods
-
-UserSchema.methods.lastUpdatedDate = function () {
+userSchema.methods.lastUpdatedDate = function () {
     this.lastUpdated = Date.now();
     return this.lastUpdated;
 };
 
-var User = mongoose.model("User", UserSchema);
+const User = mongoose.model("User", userSchema);
 
 module.exports = User;
