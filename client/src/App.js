@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Security, ImplicitCallback } from '@okta/okta-react';
-import Home from "./pages/Home";
+// import { Security, ImplicitCallback } from '@okta/okta-react';
+// import Home from "./pages/Home";
 import Books from "./pages/Books";
 import Archives from "./pages/Archives";
 import Detail from "./pages/Detail";
