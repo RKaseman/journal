@@ -7,14 +7,14 @@ router.get("/", function (req, res) {
 })
 
 router.get("/:username", function(req, res) {
-    console.log(req.params.username);
-    db.Users.find({
-        username: "jack"
-    }, function(error, userThing) {
-        console.log(userThing);
-        res.send(userThing);
-    })
-// res.send("anything");
+    // console.log(req.params.username);
+    // db.Users.find({
+    //     username: "jack"
+    // }, function(error, userThing) {
+    //     console.log(userThing);
+    //     res.send(userThing);
+    // })
+res.send("anything");
 })
 
 module.exports = router;
