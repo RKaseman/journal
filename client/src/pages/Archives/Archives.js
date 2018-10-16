@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { List, ListItem } from "../../components/List";
 import { Col, Row, Container } from "../../components/Grid";
 import "./Archives.css";
+import Fractal from "../../components/Fractal";
 
 class Books extends Component {
   state = {
@@ -55,22 +56,28 @@ class Books extends Component {
   render() {
     return (
       <Container fluid>
-        <Row>
-          <Col size="md-6 sm-12">
-            <div id="PostItTop">
-              <p id="jTitleTop">
-               
-              </p>
+      <Row>
+        <Col size="md-6 md-offset-1" id="ColFix">
+          <Row>
+            <Col size="md-12">
+              <div id="PostItTop">
+                <p id="jTitleTop">
+
+                </p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col size="md-12">
+              <div id="PostItBottom">
+                <div id="jTitleBottomBooks">
+                  Archives
             </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col size="md-6 md-offset-1">
-            <div id="PostItBottom">
-              <p id="jTitleBottomArchives">
-                Archives
-              </p>
-            </div>
+              </div>
+              </Col>
+              </Row>
+              <Row>
+                <Col size="md-12">
             {this.state.books.length ? (
               <List>
                 {this.state.books.map(book => (
@@ -87,6 +94,20 @@ class Books extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
+            </Col>
+            </Row>
+            </Col>
+            <Col size="md-6 md-offset-1">
+            <Row>
+              <Col size="md-12 md-offset-1">
+                <Fractal />
+              </Col>
+            </Row>
+            <Row>
+              <Col size="md-12 md-offset-1">
+                <Fractal />
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

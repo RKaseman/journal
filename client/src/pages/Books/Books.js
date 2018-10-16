@@ -3,6 +3,7 @@ import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import "./Books.css";
+import Fractal from "../../components/Fractal";
 
 class Books extends Component {
   state = {
@@ -54,48 +55,63 @@ class Books extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
-          <div id="PostItTop">
-              <p id="jTitleTop">
-              
-              </p>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-        <Col size="md-6 md-offset-1">
-            <div id="PostItBottom">
-              <div id="jTitleBottomBooks">
-                Write
+          <Col size="md-6 md-offset-1" id="ColFix">
+            <Row>
+              <Col size="md-12">
+                <div id="PostItTop">
+                  <p id="jTitleTop">
+
+                  </p>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col size="md-12">
+                <div id="PostItBottom">
+                  <div id="jTitleBottomBooks">
+                    Write
               </div>
-            </div>
-          
-            <form>
-              <Input
-                value={this.state.title}
-                onChange={this.handleInputChange}
-                name="title"
-                placeholder="Date/Time (required)"
-              />
-              <Input
-                value={this.state.author}
-                onChange={this.handleInputChange}
-                name="author"
-                placeholder="Entry Title (required)"
-              />
-              <TextArea
-                value={this.state.synopsis}
-                onChange={this.handleInputChange}
-                name="synopsis"
-                placeholder="Write Journal Entry Here"
-              />
-              <FormBtn
-                disabled={!(this.state.author && this.state.title)}
-                onClick={this.handleFormSubmit}
-              >
-                Submit Entry
+                </div>
+                <form>
+                  <Input
+                    value={this.state.title}
+                    onChange={this.handleInputChange}
+                    name="title"
+                    placeholder="Date/Time (required)"
+                  />
+                  <Input
+                    value={this.state.author}
+                    onChange={this.handleInputChange}
+                    name="author"
+                    placeholder="Entry Title (required)"
+                  />
+                  <TextArea
+                    value={this.state.synopsis}
+                    onChange={this.handleInputChange}
+                    name="synopsis"
+                    placeholder="Write Journal Entry Here"
+                  />
+                  <FormBtn
+                    disabled={!(this.state.author && this.state.title)}
+                    onClick={this.handleFormSubmit}
+                  >
+                    Submit Entry
               </FormBtn>
-            </form>
+                </form>
+              </Col>
+            </Row>
+          </Col>
+          <Col size="md-6 md-offset-1">
+            <Row>
+              <Col size="md-12 md-offset-1">
+                <Fractal />
+              </Col>
+            </Row>
+            <Row>
+              <Col size="md-12 md-offset-1">
+                <Fractal />
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

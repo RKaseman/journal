@@ -6,6 +6,7 @@ import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 
+
 const App = () => (
   <Router>
     <div>
@@ -17,7 +18,8 @@ const App = () => (
         <Route exact path="/archives" component={Archives} />
         <Route component={NoMatch} />
       </Switch>
-    </div>
+      
+      </div>
   </Router>
 );
 

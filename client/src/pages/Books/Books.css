@@ -22,19 +22,20 @@
     color: rgb(8, 22, 2);
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
-    width: 50%;
+    width: 350px;
     height: 225px;
-    margin: 0px 0px 20px 0px;
-    padding: 15px 10px 0px 10px;
+    margin: 0px 0px 20px 20px;
+    padding: 15px 15px 0px 10px;
+    
 }
 
 #PostItTop {
     background-color: rgb(183, 223, 179);
     color: rgb(8, 22, 2);
     font-family: 'Permanent Marker', cursive;
-    width: 50%;
+    width: 350px;
     height: 75px;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 20px;
     padding: 20px 10px 20px 10px;
 } 
 
@@ -61,5 +62,22 @@ form {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     margin-top: 20px;
+}
+
+.ColFix {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    #jTitleBottomBooks {
+        font-size: 54px;
+        font-family: 'Permanent Marker', cursive;
+        color: rgb(8, 22, 2);
+        line-height: 75px;
+        height:220px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+
 }
 

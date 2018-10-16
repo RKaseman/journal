@@ -4,8 +4,8 @@ import "./Nav.css";
 
 const Nav = () => (
   <nav className="navbar">
-        <a className="navbarName" href="/">
-          Project Name
+        <a className="navbarName">
+          Scrawler
         </a>
         <div className="Wrap3">
           <Link to={"/books/"} className="LinkButton">Home Page</Link>
