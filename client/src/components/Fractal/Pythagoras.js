@@ -1,6 +1,8 @@
 import React from "react";
 import { interpolateGreens } from "d3-scale-chromatic";
 
+// Borrowed from https://github.com/Swizec/react-fractals/blob/master/src/Pythagoras.js
+
 Math.deg = function(radians) {
     return radians * (180 / Math.PI);
 };

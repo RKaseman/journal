@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './Fractal.css';
 import { select as d3select, mouse as d3mouse } from 'd3-selection';
 import { scaleLinear } from 'd3-scale';
-
 import Pythagoras from './Pythagoras';
 
-
+// Borrowed from https://github.com/Swizec/react-fractals/blob/master/src/App.js
 // borrowed from Vue fork https://github.com/yyx990803/vue-fractal/blob/master/src/App.vue
+
 function throttleWithRAF (fn) {
   let running = false
   return function () {
